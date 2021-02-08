@@ -121,7 +121,7 @@ const App = () => {
           <Grid item xs={12} md={6}>
             <form onSubmit={handleAdd} className={classes.form}>
               <Grid container spacing={2}>
-                <Grid item xs={9}>
+                <Grid item xs={9} md={11}>
                   <TextField 
                     value={value} 
                     onChange={(e) => setValue(oldValue => (e.target.value))} 
@@ -129,7 +129,7 @@ const App = () => {
                     label="Task" 
                   />
                 </Grid>
-                <Grid item xs={3} className={classes.buttonWrapper}>
+                <Grid item xs={3} md={1} className={classes.buttonWrapper}>
                   <Button type="submit" color="primary" variant="contained">
                     <Add />
                   </Button>
