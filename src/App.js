@@ -69,11 +69,6 @@ const App = () => {
     setValue(oldValue => (""))
   }
 
-  /**
-   * A função serve para comer o cu do guilherme
-   * @param {Number} index 
-   */
-
   const handleDeleteBox = (index) => {
     setModal(oldValue => ({oldValue, open: true, index: index}))
   }
@@ -91,8 +86,6 @@ const App = () => {
     _temp[index].cabo = !(_temp[index].cabo);
     setTasks(_temp)
   }
-
-  
 
   useEffect(() => {
     if(tasks?.length !== 0){
